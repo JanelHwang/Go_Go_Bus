@@ -8,6 +8,7 @@ module.exports = merge(common, { // 合併 webpack.common.js 的設定
   entry:{
     app: ['./src/index.js'],
   },
+  use: ['style-loader', 'css-loader', 'sass-loader'],
   plugins:[],
   output : {}
 });
