@@ -36,13 +36,12 @@ export default {
   },
 };
 </script>
-<style  lang="sass">
+<style lang="sass" scope>
     /* Style the tabs */
     .tabs 
         overflow: hidden
         margin-bottom: -2px
     
-
     .tabs a
         float: left
         cursor: pointer
