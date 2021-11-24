@@ -1,10 +1,15 @@
 <template>
   <SideMenu></SideMenu>
   <Navbar></Navbar>
-  <Station>
+  <div class="w-100">
+    <Station>
       <template v-slot:tabPanel-1> Content 1</template>
       <template v-slot:tabPanel-2> Content 2</template>
-  </Station>
+    </Station>
+    <Clock></Clock>
+  </div>
+  
+  
 </template>
 
 <script>
@@ -12,19 +17,20 @@
 import Navbar from '@/components/Navbar'
 import Station from '@/components/StationInfo'
 import SideMenu from '@/components/SideMenu'
-
+import Clock from '@/components/Clock'
 export default {
   name: 'Home',
   components: {
     Navbar,
     Station,
-    SideMenu
+    SideMenu,
+    Clock
   }
 }
 </script>
 
 <style lang="sass" scope>
-  body
+  html,body
     width: 100%
     height: 100%
     overflow: hidden

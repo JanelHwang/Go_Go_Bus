@@ -1,36 +1,151 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Roboto:wght@300;400;700&display=swap");
-* { line-height: 1.175; font-weight: 400; }
+* {
+  line-height: 1.175;
+  font-weight: 400;
+}
 
-.dm-sans { font-family: "DM Sans", sans-serif; }
+.dm-sans {
+  font-family: "DM Sans", sans-serif;
+}
 
-.roboto { font-family: "Roboto", sans-serif; }
+.roboto {
+  font-family: "Roboto", sans-serif;
+}
 
-.bg-default { background-color: #0077FF; }
+.bg-default {
+  background-color: #0077FF;
+}
 
-.bg-light { background-color: #486AE8 !important; }
+.bg-light {
+  background-color: #486AE8 !important;
+}
 
-.bg-tint { background-color: #99BADD; }
+.bg-tint {
+  background-color: #99BADD;
+}
 
-.bg-compare { background-color: #FFC44E; }
+.bg-compare {
+  background-color: #FFC44E;
+}
 
-.bg-dark { background-color: #1E222B; }
+.bg-dark {
+  background-color: #1E222B;
+}
 
-.bg-white { background-color: #fff; }
+.bg-white {
+  background-color: #fff;
+}
 
-.color-default { background-color: #0077FF; }
+.color-default {
+  background-color: #0077FF;
+}
 
-.color-light { background-color: #486AE8 !important; }
+.color-light {
+  background-color: #486AE8 !important;
+}
 
-.color-tint { background-color: #99BADD; }
+.color-tint {
+  background-color: #99BADD;
+}
 
-.color-compare { background-color: #FFC44E; }
+.color-compare {
+  background-color: #FFC44E;
+}
 
-.color-dark { background-color: #1E222B; }
+.color-dark {
+  background-color: #1E222B;
+}
 
-.color-white { background-color: #fff; }
+.color-white {
+  background-color: #fff;
+}
 
-h1, h2, h3, h4, h5, h6 { font-weight: 700; }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
 
-.card { border-radius: 16px; }
+.card {
+  border-radius: 16px;
+  -webkit-box-shadow: 2px 4px 7px rgba(196, 196, 196, 0.2);
+          box-shadow: 2px 4px 7px rgba(196, 196, 196, 0.2);
+}
+
+.nav-item {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+  background-color: #a3b4f3;
+}
+
+.nav-link {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.nav-link img {
+  opacity: 0.75;
+}
+
+.nav-link:hover img {
+  opacity: 0.8;
+}
+
+.active {
+  background-color: #486AE8;
+}
+
+.active img {
+  opacity: 1;
+}
+
+.active:hover {
+  background-color: #486AE8;
+}
+
+.active:hover img {
+  opacity: 1;
+}
+
+.nav-icon {
+  margin-right: calc(50vw - 43px);
+}
+
+#clock {
+  width: 359px;
+  height: 297px;
+  background: url("../../assets/images/clock.png") no-repeat center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#clock .title {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  padding-bottom: 26px;
+  letter-spacing: 3px;
+}
+
+#clock .time {
+  font-size: 68px;
+  font-weight: 400;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 70px;
+}
 /*# sourceMappingURL=all.css.map */

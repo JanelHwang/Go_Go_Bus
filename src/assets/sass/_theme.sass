@@ -50,3 +50,49 @@ h1,h2,h3,h4,h5,h6
     
 .card
     border-radius: $border-radius
+    box-shadow: 2px 4px 7px rgba(196, 196, 196, 0.2)
+    
+.nav-item
+    transition: all 0.3s ease-in-out
+    &:hover
+        background-color: lighten($light, 20)
+.nav-link
+    font-weight: 700
+    font-size: 18px
+    img
+        opacity: 0.75
+    &:hover
+        img
+            opacity: 0.8
+.active
+    background-color: $light
+    img
+        opacity: 1
+    &:hover
+        background-color: $light
+        img
+            opacity: 1
+.nav-icon
+    margin-right: calc(50vw - 43px)
+#clock
+    width: 359px
+    height: 297px
+    background: url("../../assets/images/clock.png") no-repeat center center
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+
+    .title
+        font-family: $font-roboto
+        font-size: 16px
+        font-weight: $font-weight-bold
+        color: $white
+        padding-bottom: 26px
+        letter-spacing: 3px
+    .time
+        font-size: 68px
+        font-weight: $font-weight-normal
+        color: $white
+        font-family: $font-roboto
+        padding-bottom: 70px

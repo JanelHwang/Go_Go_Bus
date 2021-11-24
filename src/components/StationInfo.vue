@@ -16,7 +16,6 @@
         v-for='(itemCon,index) in tabContents' 
         :key="index"
         v-show=" index == activetab"
-        @click="tab(index)"
         class="tabcontent">{{itemCon}}</div>
     </div>
 </template>
@@ -24,7 +23,7 @@
 export default {
   data() {
     return {
-        activetab: '1',
+        activetab: '0',
         tabs: ["標題一", "標題二"],
         tabContents: ["內容1","內容2"]
     };
@@ -41,14 +40,12 @@ export default {
     .tabs 
         overflow: hidden
         margin-bottom: -2px
-    
     .tabs a
         float: left
         cursor: pointer
         width: 50%
         padding: 12px 24px
         transition: background-color 0.2s
-        border: 1px solid #ccc
         border-right: none
         background-color: #BFCDFF
         color: #fff !important
@@ -62,7 +59,7 @@ export default {
 
     /* Change background color of tabs on hover */
     .tabs a:hover 
-        background-color: lighten(#486AE8,10)
+        background-color: lighten(#486AE8, 10)
     
 
     /* Styling for active tab */
@@ -74,8 +71,8 @@ export default {
     /* Style the tab content */
     .tabcontent 
         padding: 21.25px 22px 27px 22px
-        border: 1px solid #ccc
         border-radius: 0 0 16px 16px
+        box-shadow: 2px 4px 7px rgba(196, 196, 196, 0.2)
     @media (max-width: 768px)
         .tabcontent
             max-height: 453px
