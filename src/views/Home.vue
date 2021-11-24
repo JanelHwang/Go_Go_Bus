@@ -7,6 +7,7 @@
       <template v-slot:tabPanel-2> Content 2</template>
     </Station>
     <Clock></Clock>
+    <SearchCard></SearchCard>
   </div>
   
   
@@ -18,13 +19,15 @@ import Navbar from '@/components/Navbar'
 import Station from '@/components/StationInfo'
 import SideMenu from '@/components/SideMenu'
 import Clock from '@/components/Clock'
+import SearchCard from '@/components/SearchCard'
 export default {
   name: 'Home',
   components: {
     Navbar,
     Station,
     SideMenu,
-    Clock
+    Clock,
+    SearchCard,
   }
 }
 </script>

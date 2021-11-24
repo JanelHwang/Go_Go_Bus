@@ -1,7 +1,7 @@
 <template>
     <div id="clock">
         <div class="title">您還沒輸入路線資訊喔！</div>
-        <div class="time">{{ hours }}: {{minutes}}</div>
+        <div class="time">{{ hours }} : {{minutes}}</div>
     </div>
 </template>
 <script>
@@ -18,8 +18,8 @@ export default {
         updateTime(){
             const date = new Date();
             this.time = date;
-            this.hours = date.getHours();
-            this.minutes = date.getMinutes();
+            this.hours = date.getHours().toString().padStart(2,0);
+            this.minutes = date.getMinutes().toString().padStart(2,0);
             
         }
     }, 
