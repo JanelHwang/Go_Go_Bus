@@ -1,12 +1,16 @@
 <template>
     <div class="card search-box">
         <h2 class="title dm-sans">Where are you going?</h2> 
-        <div class="dropdown">
-            <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
-                下拉菜单（Dropdown） <span class="caret"></span>
+        <div class="dropdown text-left dm-sans">
+            <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#">
+                選擇<strong>縣市</strong>  <span class="caret"></span>
             </a>
             <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-               <li></li>
+                <li>123</li>
+                <li>456</li>
+                <li>789</li>
+                <li>789</li>
+                <li>789</li>
             </ul>
         </div>
     </div>    
@@ -23,12 +27,11 @@ export default {
 </script>
 <style lang="sass" scoped>
     .search-box
-        width: 381px
+        width: 383px
         height: 336px
         padding: 44px 40px 56px 40px
         .title
             font-size: 24px
             font-weight: 700
             color: #7D7D7D
- 
 </style>

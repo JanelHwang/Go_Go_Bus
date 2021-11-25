@@ -1,5 +1,5 @@
 <template>
-    <div id="clock">
+    <div id="clock" class="card">
         <div class="title">您還沒輸入路線資訊喔！</div>
         <div class="time">{{ hours }} : {{minutes}}</div>
     </div>
@@ -14,15 +14,16 @@ export default {
             minutes: null,
         };
     },
+    created(){
+    },
     methods: {
         updateTime(){
             const date = new Date();
             this.time = date;
             this.hours = date.getHours().toString().padStart(2,0);
             this.minutes = date.getMinutes().toString().padStart(2,0);
-            
         }
-    }, 
+    },
     mounted() {
         setInterval(this.updateTime,1000);
     },
