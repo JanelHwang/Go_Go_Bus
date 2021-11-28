@@ -6,15 +6,21 @@
         <a href="#"><img class="nav-icon" src="../../assets/svg/logo.svg" alt="logo" width="69" height="43"></a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item text-center active">
-                    <a class="nav-link" href="#"><img class="mr-2" src="../../assets/svg/map-pin.svg" alt="logo" width="26" height="26">附近站牌 <span class="sr-only">(current)</span></a>
-                </li>
+                <router-link to="/station">
+                    <li class="nav-item text-center active">
+                        <a class="nav-link" href="#"><img class="mr-2" src="../../assets/svg/map-pin.svg" alt="logo" width="26" height="26">附近站牌 <span class="sr-only">(current)</span></a>
+                    </li>
+                </router-link>
+
                 <li class="nav-item">
                     <a class="nav-link" href="#"><img class="mr-2" src="../../assets/svg/search.svg" alt="logo" width="26" height="26">路線搜尋</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"><img class="mr-2" src="../../assets/svg/bell.svg" alt="logo" width="26" height="26">最新消息</a>
-                </li>
+                
+                <router-link to="/news">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img class="mr-2" src="../../assets/svg/bell.svg" alt="logo" width="26" height="26">最新消息</a>
+                    </li>
+                </router-link>
             </ul>
         </div>
     </nav>

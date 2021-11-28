@@ -4,15 +4,21 @@
             <img src="../../assets/svg/logo.svg" alt="logo" width="101" height="62">
         </div>
         <div class="btn-vertical">
-            <button type="button" class="btn bg-light active">
-                <img src="../../assets/svg/map-pin.svg" alt="logo" width="26" height="26">
-            </button>
+            <router-link to="/station">
+                <button type="button" class="btn bg-light">
+                    <img src="../../assets/svg/map-pin.svg" alt="logo" width="26" height="26">
+                </button>
+            </router-link>
+
             <button button type="button" class="btn bg-light">
                 <img src="../../assets/svg/search.svg" alt="logo" width="26" height="26">
             </button>
-            <button button type="button" class="btn bg-light">
-                <img src="../../assets/svg/bell.svg" alt="logo" width="26" height="26">
-            </button>
+
+            <router-link to="/news">
+                <button button type="button" class="btn bg-light">
+                    <img src="../../assets/svg/bell.svg" alt="logo" width="26" height="26">
+                </button>
+            </router-link>
         </div>
     </div> 
 </template>

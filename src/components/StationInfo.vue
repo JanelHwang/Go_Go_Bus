@@ -1,22 +1,19 @@
 <template>
     <div class="tabs">
       <a 
-      v-for="(item,index) in tabs" 
-      :key='index' 
+      v-for="(item,index) in tabData" 
+      :key='item.tab' 
       :class="{active:index == activetab}"
       @click="tab(index)">
-      {{item}}
+      {{item.tab}}
       </a>
         <!-- <a v-on:click="activetab='1'" v-bind:class="[ activetab === '1' ? 'active' : '' ]">100 m</a>
         <a v-on:click="activetab='2'" v-bind:class="[ activetab === '2' ? 'active' : '' ]">300 m</a> -->
     </div>
 
-    <div class="content">
-        <div 
-        v-for='(itemCon,index) in tabContents' 
-        :key="index"
-        v-show=" index == activetab"
-        class="tabcontent">{{itemCon}}</div>
+    <div class="station-content roboto">
+        <slot name="bus-station-300" class="tabcontent" v-if="activetab === 0"></slot>
+        <slot name="bus-station-500" class="tabcontent"></slot>
     </div>
 </template>
 <script>
@@ -24,9 +21,14 @@ export default {
   data() {
     return {
         activetab: '0',
-        tabs: ["標題一", "標題二"],
-        tabContents: ["內容1","內容2"]
+        // tabs: ["標題一", "標題二"],
+        // tabContents: ["內容1","內容2"]
     };
+  },
+  props:{
+      tabData: {
+          type: Array
+      }
   },
   methods: {
     tab(index) {

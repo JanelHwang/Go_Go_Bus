@@ -104,9 +104,8 @@ h1,h2,h3,h4,h5,h6
         padding-bottom: 70px
 
 .dropdown
-
     a
-        color: $gray-800
+        color: $gray-700
         text-decoration: none
         font-size: 16px
         font-weight: 500
@@ -135,8 +134,8 @@ h1,h2,h3,h4,h5,h6
             width: 8px
         &::-webkit-scrollbar-track
             -webkit-border-radius: 100px
-            border-radius: 100px
-            background-color: transparent !important
+            border-radius: 0 16px 16px 0
+            background-color: $gray-700 !important
         &::-webkit-scrollbar-thumb
             background-color: $light
             border-radius: 100px
@@ -147,11 +146,89 @@ h1,h2,h3,h4,h5,h6
             transition: all 0.3s ease-in-out
             letter-spacing: 2px
             &:nth-child(odd)
-                background-color: rgba(237, 239, 255, 0.5)
+                background-color: #EDEFFF
             &:nth-child(even)
                 background-color: #FFF
             &:hover
-                background-color: rgba(242, 242, 242, 0.8)
+                background-color: lighten($tint, 10)
                 font-weight: $font-weight-bold
                 color: $gray-1000
 
+.border-daah
+    border-top: dashed 1px $gray-800
+
+.station,.news
+    width: calc( 100vw -  142px)
+    padding:  55px 87px 65px 82px
+    margin: 0 0 0 142px
+    height: 100%
+
+.news-bg
+    width: 100%
+    height: 80%
+    background-color: $white
+    border-radius: 16px
+    padding: 60px 76px 0px 74px
+    margin-bottom: 79px
+    h2
+        font-size: 20px
+        color: $gray-900
+        margin-bottom: 24px
+        text-align: left
+.station-content,.news-content
+    height: calc(100vh - 380px)
+    overflow-y: scroll
+    text-align: left
+.station-txt 
+    padding: 25px 0
+    padding-left: 70px
+    background: #f6f7ff
+    margin-top: 3px
+    &:first-child
+        margin-top: 0
+
+    &:nth-child(2n) 
+        background: #eceeff
+    
+    h3 
+        display: flex
+        font-weight: bold
+        font-size: 18px
+        color: #486ae8
+    
+    p
+        font-weight: 500
+        font-size: 18px
+        color: #7d7d7d
+        margin-top: 10px
+
+.news-txt 
+    padding: 25px 0
+    padding-left: 70px
+    background: #f6f7ff
+    margin-top: 3px
+    &:first-child 
+        margin-top: 0
+    &:nth-child(2n) 
+        background: #eceeff
+    h3 
+        font-weight: 500
+        font-size: 18px
+        color: #7d7d7d
+        margin-top: 5px
+    p 
+        font-weight: bold
+        font-size: 18px
+        color: #486ae8
+
+@media screen and (max-width: 768px)
+    .station,.news
+        width: calc( 100% - 30px ) 
+        margin: 15px
+        padding: 0
+    .news-bg
+        background-color: transparent
+        padding: 15px
+        margin: 0
+    .station-content,.news-content
+        height: calc(100vh - 280px)

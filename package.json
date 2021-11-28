@@ -12,7 +12,11 @@
   "main": "babel.config.js",
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^3.2.22",
+    "jssha": "^3.2.0",
+    "leaflet": "^1.7.1",
+    "vue": "^3.2.23",
+    "vue-axios": "^3.4.0",
+    "vue-browser-geolocation": "^1.8.0",
     "vue-router": "^4.0.0-0"
   },
   "devDependencies": {
@@ -27,8 +31,10 @@
     "babel-preset-es2016": "^6.24.1",
     "bootstrap": "^4.0.0",
     "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-vue": "^7.0.0",
     "jquery": "^3.6.0",
+    "node-sass": "^6.0.1",
     "popper.js": "^1.16.1",
     "sass": "^1.26.11",
     "sass-loader": "^10.2.0",
