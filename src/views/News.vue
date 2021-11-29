@@ -13,7 +13,8 @@
           </div>
         </template>
       </div>
-    </div> 
+    </div>
+    <Footer />
   </div>
 </template>
 
@@ -21,6 +22,7 @@
 import Navbar from '@/components/Navbar.vue';
 import SideMenu from '@/components/SideMenu.vue';
 import Title from '@/components/header.vue';
+import Footer from '@/components/Footer.vue';
 import getAuthorizationHeader from '../tools/AuthorizationHeader';
 
 export default {
@@ -28,6 +30,7 @@ export default {
   components: {
     Navbar,
     Title,
+    Footer,
     SideMenu
   },
   data() {

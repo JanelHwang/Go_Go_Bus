@@ -6,7 +6,7 @@
     <div class="news-bg">
       <Station :tabData="tabData">
         <template v-slot:bus-station-300>
-          <h3 v-if="nearbyBusSite300.length === 0">目前所在附近沒有公車站牌 !</h3>
+          <h3 v-if="nearbyBusSite300.length === 0">您目前所在的地方，附近沒有公車站牌 !</h3>
           <div class="station-txt" v-for="item in nearbyBusSite300" :key="item.StationID">
             <h3>
               {{ item.StationName.Zh_tw }}
@@ -45,6 +45,7 @@
         </template>
       </Station>
     </div>
+    <Footer />
   </div>
 </template>
 
@@ -54,6 +55,7 @@ import Navbar from '@/components/Navbar.vue';
 import Title from '@/components/header.vue';
 import Station from '@/components/StationInfo.vue';
 import SideMenu from '@/components/SideMenu.vue';
+import Footer from '@/components/Footer.vue';
 import getAuthorizationHeader from '../tools/AuthorizationHeader';
 
 export default {
@@ -62,6 +64,7 @@ export default {
     Navbar,
     Title,
     Station,
+    Footer,
     SideMenu
   },
   data(){

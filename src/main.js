@@ -10,6 +10,8 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import '../assets/css/all.css';
 
 const app = createApp(App);
+app.config.productionTip = false
+
 app.use(VueAxios, axios);
 app.use(router);
 app.mount('#app');
